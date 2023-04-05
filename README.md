@@ -2,7 +2,7 @@
 This is a basic representation of Blackjack Game using Javascript. 
 
 Website Link: https://saumyasah.github.io/Blackjack-Game/
-Above is the website link. The implementation of the code can be seen in that site. 
+The implementation of the code can be seen in that site. 
 
 # HTML 
 Some basic HTML is used in this project. The following Tags are used:
