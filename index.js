@@ -6,7 +6,15 @@ let message=" "
 let messageEL=document.getElementById("message-el")
 let sumEl=document.getElementById("sum-el")
 let cardsEL=document.getElementById("cards-el")
-console.log(cards)
+
+let player={
+    name: "Per",
+    chips: 200
+}
+
+
+let playerEl = document.getElementById("player-el")
+playerEl.textContent=player.name+ ": $" +player.chips
 
 function getRandomCard()
 {
@@ -52,12 +60,15 @@ function renderGame()
     }
     messageEL.textContent=message
 }
+
 function newCard()
 {
-    
+    if(isAlive==true && hasBlackJack==false)
+    {
     let card=getRandomCard()
     sum+=card
     cards.push(card)
     console.log(cards)
     renderGame()
+    }
 }
